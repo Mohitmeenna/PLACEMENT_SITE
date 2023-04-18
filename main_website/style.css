@@ -1,0 +1,129 @@
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    position: fixed;
+    background-color: rgb(79, 129, 217);
+    bottom: 0px;
+    width: 100%;
+    left: 0px;
+    
+  }
+  
+  .left{
+    width: 288px;
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    
+  
+  }
+  
+  .middle{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 792px;
+    align-items: center;
+    padding-top: 33.6px;
+    margin-left: 72px;
+    /* background-color: bisque;/ */
+    margin-right: 72px;
+  }
+  .right{
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+    margin-left: 168px;
+  }
+  .icon-line{
+    height: 49px;
+    margin-left: 24px;
+    border-radius: 156px;
+  }
+  .footer-h{
+    color: white;
+    font-size: 29px;
+    font-family: Arial;
+    padding-left: 12px;
+    vertical-align: center;
+    font-weight: 100;
+  }
+  h3{
+    color: white;
+    font-size: 22px;
+    font-family: Arial;
+    vertical-align: center;
+    font-weight: 100;
+  }
+  .middle-bottom{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-size: 18px;
+    width: 650px;
+  }
+  .abc{
+    margin-right:50px;
+    margin-bottom: 13px;;
+  }
+  a{
+    margin-right: 24px;
+    color: white;
+    text-decoration: none;
+    
+  }
+  .icon-yt{
+    height:32px;
+    padding-left: 16px;
+  }
+  .icon-demo{
+    height: 48px;
+  }
+  .search{
+    border-width: 1px;
+    border-radius: 1pc;
+    width: 400px;
+    border-color: rgb(196, 193, 193);
+    border-style: solid;
+    box-shadow: inset 4px 4px 5px rgba(0,0,0,0.05);
+    margin-right:10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .search::placeholder{
+    font-family: Arial;
+    font-size: 9px;
+    padding-left: 5px;
+    vertical-align: center;
+  }
+  .icon-search{
+    height: 13px;
+  
+  }
+  .icon-voice{
+    height: 36px;
+  
+  }
+  .icon-live{
+    height: 14px;
+  
+  }
+  .icon-short{
+    padding-left: 100px;
+    height: 16px;
+  
+  }
+  .icon-bell{
+    height: 14px;
+  
+  }
+  .icon-user{
+    height: 14px;
+  
+  }

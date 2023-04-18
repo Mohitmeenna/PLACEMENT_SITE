@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alumni Registration</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<form action="alum_registration.php" method="POST">
+		<h2>Alumni Registration Form</h2>
+		<label for="fname">First Name:*</label>
+		<input type="text" id="fname" name="fname" required>
+		<label for="email">Email:*</label>
+		<input type="email" id="email" name="email" required>
+		<label for="password">Password:*</label>
+		<input type="password" id="password" name="password" required>
+		<label for="confirm_password">Confirm Password:*</label>
+		<input type="password" id="confirm_password" name="confirm_password" required>
+		<label for="rollno">Roll No:*</label>
+		<input type="text" id="rollno" name="rollno" required>
+		<label for="qualification">Qualification:*</label>
+		<select id="qualification" name="qualification">
+			<option value="btech">B.Tech</option>
+			<option value="mtech">M.Tech</option>
+			<option value="phd">PhD</option>
+			<option value="others">Other</option>
+		</select>
+		<label for="graduation_year">Graduation Year:*</label>
+		<input type="number" id="graduation_year" name="graduation_year" min="1900" max="<?php echo date('Y'); ?>" required>
+		<input type="submit" value="Submit">
+	</form>	
+		<style>
+			body {
+				color: black;
+				height: 854px ;
+			  background-color: #f2f2f2;
+			  font-family: Arial, sans-serif;
+			  background-image: url(img8.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			}
+			
+			h2 {
+			  color: #000000;
+			  text-align: center;
+			}
+			
+			form {
+			  margin: 0 auto;
+			  margin-top: 106px;
+			  max-width: 500px;
+			  padding: 20px;
+			  background: url(https://picsum.photos/id/1004/5616/3744) no-repeat center center #505050;
+			background-size: cover;
+			box-shadow: 10px 30px 60px -5px rgba(255, 0, 0, 0.3);
+			}
+			
+			label {
+			  display: block;
+			  margin-bottom: 5px;
+color:black;
+			}
+			
+			input[type=text],
+			input[type=email],
+			input[type=password],
+			input[type=number],
+			select {
+			  display: block;
+			  margin-bottom: 22px;
+			  			  padding: 10px;
+			  width: 100%;
+			  border-radius: 5px;
+			  border: 1px solid #cccccc;
+			  box-sizing: border-box;
+			  font-size: 16px;
+			  color: #333333;
+			}
+			
+			input[type=checkbox] {
+			  margin-right: 5px;
+			}
+			
+			input[type=submit] {
+				margin-top: 14px;
+				background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	-webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+	font-family: Georgia;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+			}
+			
+			input[type=submit]:hover {
+				background: #fc3c7c;
+	background-image: -webkit-linear-gradient(top, #fc3c7c, #3498db);
+	background-image: -moz-linear-gradient(top, #fc3c7c, #3498db);
+	background-image: -ms-linear-gradient(top, #fc3c7c, #3498db);
+	background-image: -o-linear-gradient(top, #fc3c7c, #3498db);
+	background-image: linear-gradient(to bottom, #fc3c7c, #3498db);
+	text-decoration: none;			}
+	</style>
+</body>
+</html>
+
+
+<!-- 
+
+input[type=submit] {
+	background-color: #008080;
+	color: #ffffff;
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+	background-color: #005959;
+  }
+
+
+
+
+.btn {
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	-webkit-border-radius: 8;
+	-moz-border-radius: 8;
+	border-radius: 8px;
+	font-family: Georgia;
+	color: #ffffff;
+	font-size: 20px;
+	padding: 10px 20px 10px 20px;
+	text-decoration: none;
+  }
+  
+  .btn:hover {
+	background: #fc3c7c;
+	background-image: -webkit-linear-gradient(top, #fc3c7c, #3498db);
+	background-image: -moz-linear-gradient(top, #fc3c7c, #3498db);
+	background-image: -ms-linear-gradient(top, #fc3c7c, #3498db);
+	background-image: -o-linear-gradient(top, #fc3c7c, #3498db);
+	background-image: linear-gradient(to bottom, #fc3c7c, #3498db);
+	text-decoration: none;
+  } -->

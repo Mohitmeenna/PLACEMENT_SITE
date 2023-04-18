@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive Navigation Bar - Devbabu.Com</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            line-height: 1.5em;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Open Sans", sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #116e93;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            padding: 10px 20px;
+            position: fixed;
+            width: 1839px;
+        }
+
+
+        header .wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo img {
+            height: 50px;
+            display: block;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 100%;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            padding: 20px;
+            transition: left 0.3s;
+        }
+
+        .navbar.show {
+            left: 0 !important;
+        }
+
+        .hide-scroll {
+            overflow: hidden;
+        }
+
+        .navbar ul {
+            all: unset;
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .navbar ul a {
+            all: unset;
+            color: #444444;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        .navbar ul a:hover {
+            color: #111111;
+            text-decoration: underline overline;
+            text-decoration-thickness: 3px;
+        }
+
+        .close-nav {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .close-nav button {
+            all: unset;
+            background: #f7f7f7;
+            font-size: 42px;
+            cursor: pointer;
+            border: 1px solid rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            border-radius: 3px;
+            color: #444444;
+        }
+
+        .close-nav button:hover {
+            color: #222222;
+            background: white;
+        }
+
+        .menu-bar button {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: #f7f7f7;
+            height: 50px;
+            width: 50px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+
+        .menu-bar i {
+            display: block;
+            border-top: 3px solid #525151;
+            border-bottom: 3px solid #444444;
+        }
+
+        .menu-bar i::after {
+            display: block;
+            content: "";
+            border-top: 3px solid #444444;
+            margin: 6px 0;
+        }
+
+        .menu-bar button:hover {
+            background: white;
+        }
+
+        .menu-bar button:hover i {
+            border-color: #222222;
+        }
+
+        .container {
+
+
+            background-image: url(bg.png);
+            background-position: center;
+            background-size: cover;
+
+
+
+
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        @media (min-width: 550px) {
+            .navbar {
+                all: unset;
+                display: block;
+            }
+
+            .navbar ul {
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            .navbar ul a {
+                font-size: inherit;
+            }
+
+            .close-nav,
+            .menu-bar {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <img style="border-radius:82px" src="logo.jpeg" alt="">
+            </div>
+            <div class="navbar">
+                <div class="close-nav"><button>×</button></div>
+                <nav>
+                    <ul>
+                        <li><a href="/student/login_main.php">Login</a></li>
+                        <li><a href="/student/registration.html">Register</a></li>
+                        <li><a href="/companies/company_login_ui.php">Company Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu-bar">
+                <button><i></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <br><br>
+        <h1>Lorem, ipsum dolor sit amet consectetur adipisicing.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque distinctio aut omnis. Ipsum eveniet
+            dignissimos minima, accusantium modi quasi nesciunt eum eos nobis sunt aspernatur iure sequi aut? Tenetur
+            quidem eligendi consequatur aliquam, tempore atque nisi veniam hic facere, expedita nobis, nemo adipisci!
+            Optio accusantium sequi ratione reprehenderit molestias porro! Eligendi saepe magnam iusto ab quaerat alias
+            placeat optio necessitatibus corrupti facere, perspiciatis vitae a consectetur dolores laudantium quibusdam
+            quis.</p>
+        <p>jvjsdkjfnkj Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi accusantium qui harum ipsum
+            deserunt, cum magni veritatis rem velit tempora ad. Eos dolorem modi molestiae officia explicabo illo
+            distinctio nisi.</p>
+        <h1>knksjnkjs</h1>
+
+        <h1>knksjnkjs</h1>
+        <h1>knksjnkjs</h1>
+        <h1>knksjnkjs</h1>
+        <h1>knksjnkjs</h1>
+        <h1>knksjnkjs</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem, recusandae eveniet adipisci facere
+            ratione voluptas dolorem aperiam hic earum, similique, possimus omnis cumque ea. Tempore voluptatibus,
+            laboriosam unde culpa sit facilis temporibus quia dignissimos vel illo cum aspernatur perferendis asperiores
+            accusamus quas nobis sed blanditiis molestiae est? Neque esse unde, reprehenderit, aliquam alias maiores,
+            quaerat rerum eum velit nesciunt harum voluptatum tempora ea. At velit adipisci aut quam minima odio quod
+            repellat officiis quaerat ipsam a, tempore, dicta quidem minus esse dolorem maxime sit praesentium nemo
+            asperiores! Maiores iusto cum voluptates similique dolore facilis deserunt officiis saepe, praesentium hic
+            impedit? Est corrupti deserunt, pariatur mollitia eaque officia. Delectus, possimus illum? Earum eos
+            repellendus dolorum architecto hic maxime ratione libero atque dolores laudantium animi natus eligendi porro
+            est doloremque, nobis at tenetur error unde delectus numquam neque voluptatum impedit praesentium. Officia,
+            laudantium corporis odit, qui aut deserunt adipisci nisi debitis esse harum dolorem neque, vitae aperiam
+            mollitia cum similique veritatis rerum officiis accusantium quas sunt dolorum excepturi repellat! Placeat
+            fugiat provident maxime, iure id cupiditate exercitationem sit natus inventore ut, repellendus consequatur
+            aut atque. Explicabo eos voluptates eius. Consequatur sed distinctio asperiores delectus voluptatibus, et
+            minima ea obcaecati incidunt numquam nisi rerum itaque veritatis voluptas omnis velit consectetur
+            repellendus doloribus sint, sequi esse corporis. Nostrum numquam temporibus id alias delectus magni suscipit
+            provident labore rerum autem, odit illum laboriosam consectetur totam. Aspernatur asperiores est iusto
+            accusantium eveniet consectetur illo quidem officiis omnis, explicabo officia corrupti repellat laborum,
+            quisquam dolor similique error in reprehenderit itaque, earum porro delectus esse. Voluptatem eligendi velit
+            labore accusamus eveniet illum eos aspernatur incidunt, eius corporis, quae blanditiis modi ad quasi dolorem
+            tempora esse autem voluptate natus doloremque? Nulla, magnam consequuntur dolore, ea labore nostrum adipisci
+            ullam quasi quisquam debitis vitae deleniti incidunt nobis consequatur recusandae aliquam at. Iure nobis rem
+            eveniet, eligendi ipsa esse unde commodi itaque similique eaque mollitia corrupti magni, fuga tenetur
+            corporis non inventore quos illo totam consequatur laborum omnis perferendis nisi? Unde, modi dolore itaque
+            distinctio non adipisci aliquid ex temporibus doloremque vitae nam aperiam recusandae blanditiis reiciendis.
+            Voluptas, doloremque odit. Expedita doloremque tempore, quo quis maxime saepe labore. Recusandae eaque culpa
+            debitis omnis tempora, dolore nihil ut id reiciendis eligendi impedit, quam sit quia velit repudiandae!
+            Doloribus quas blanditiis, consequatur dolorem culpa accusamus perspiciatis, qui odio consequuntur aliquid
+            debitis placeat dignissimos maiores natus assumenda dolore neque id expedita magnam ipsa atque enim facilis
+            dolor. Modi, iusto pariatur facilis dolorum rem vitae unde fuga numquam nihil, distinctio corporis autem
+            accusantium consectetur quasi? Rem doloribus voluptates reiciendis facere labore vero, mollitia iste fuga
+            accusamus inventore officia, iusto maxime quibusdam expedita corporis, at impedit laboriosam minus quidem
+            voluptate error unde perferendis? Et optio nisi beatae laudantium rerum debitis repellendus.</p>
+
+    </div>
+
+</body>
+
+</html>
